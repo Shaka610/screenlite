@@ -1,8 +1,8 @@
 import { ScreenType } from '../types'
 
 export type ScreenTypeOption = {
-	value: ScreenType
-	label: string
+    value: ScreenType
+    label: string
 }
 
 export const screenTypes: ScreenTypeOption[] = [

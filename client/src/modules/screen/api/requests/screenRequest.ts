@@ -2,7 +2,7 @@ import axios from '@config/axios'
 import { Screen } from '../../types'
 
 type ScreenRequestResponse = {
-	screen: Screen
+    screen: Screen
 }
 
 export type ScreenRequestData = {

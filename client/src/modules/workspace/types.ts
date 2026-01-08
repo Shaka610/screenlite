@@ -1,11 +1,11 @@
 export type Workspace = {
-	status: string
-	id: string
-	name: string
-	createdAt: string
-	updatedAt: string
-	slug: string
-	picture: string | null
+    status: string
+    id: string
+    name: string
+    createdAt: string
+    updatedAt: string
+    slug: string
+    picture: string | null
 }
 
 export interface WorkspaceStatistics {
@@ -24,7 +24,7 @@ export interface WorkspaceStatistics {
 }
 
 export type WorkspaceMembershipWithWorkspaceView = {
-	membershipId: string
+    membershipId: string
     workspace: {
         id: string
         name: string

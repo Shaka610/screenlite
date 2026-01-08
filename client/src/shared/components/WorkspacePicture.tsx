@@ -1,9 +1,9 @@
 import { StorageService } from '@/utils/StorageService'
 
 interface Props {
-	name?: string
-	picture?: string | null
-	size?: number
+    name?: string
+    picture?: string | null
+    size?: number
 }
 
 export const WorkspacePicture = ({ name, picture, size = 40 }: Props) => {

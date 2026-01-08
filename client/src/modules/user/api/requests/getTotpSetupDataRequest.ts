@@ -1,8 +1,8 @@
 import axios from '@/config/axios'
 
 type GetTotpSetupDataResponse = {
-	secret: string
-	authUrl: string
+    secret: string
+    authUrl: string
 }
 
 export const getTotpSetupDataRequest = async (userId: string) => {

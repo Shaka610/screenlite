@@ -2,15 +2,15 @@ import axios from '@config/axios.js'
 import { Playlist, PlaylistSchedule } from '../../types.js'
 
 type ChangePlaylistLayoutRequestResponse = {
-	playlist: Playlist & {
-		schedules: PlaylistSchedule[]
-	}
+    playlist: Playlist & {
+        schedules: PlaylistSchedule[]
+    }
 }
 
 export type ChangePlaylistLayoutRequestData = {
-	playlistId: string,
-	playlistLayoutId: string,
-	workspaceId: string
+    playlistId: string,
+    playlistLayoutId: string,
+    workspaceId: string
 }
 
 export const changePlaylistLayoutRequest = async (data: ChangePlaylistLayoutRequestData) => {

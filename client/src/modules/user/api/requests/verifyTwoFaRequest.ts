@@ -2,11 +2,11 @@ import axios from '@config/axios'
 import { User } from '@modules/user/types'
 
 export type VerifyTwoFaData = {
-	token: string
+    token: string
 }
 
 type VerifyTwoFaResponse = {
-	user: User
+    user: User
 }
 
 export const verifyTwoFaRequest = async (data: VerifyTwoFaData) => {

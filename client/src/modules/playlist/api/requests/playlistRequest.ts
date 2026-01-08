@@ -7,9 +7,9 @@ export type PlaylistRequestData = {
 }
 
 type PlaylistRequestResponse = {
-	playlist: Playlist & {
-		schedules: PlaylistSchedule[]
-	}
+    playlist: Playlist & {
+        schedules: PlaylistSchedule[]
+    }
 }
 
 export const playlistRequest = async (data: PlaylistRequestData) => {

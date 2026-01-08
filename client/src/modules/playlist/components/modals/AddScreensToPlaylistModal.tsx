@@ -18,9 +18,9 @@ import { playlistQuery } from '@modules/playlist/api/queries/playlistQuery'
 import { handleAxiosFieldErrors } from '@shared/helpers/handleAxiosFieldErrors'
 
 interface ScreenListProps {
-	search: string
-	toggleItemSelection: (screen: ScreenWithPlaylists) => void
-	isSelected: (screen: ScreenWithPlaylists) => boolean
+    search: string
+    toggleItemSelection: (screen: ScreenWithPlaylists) => void
+    isSelected: (screen: ScreenWithPlaylists) => boolean
 }
 
 const ScreenList = ({ search, toggleItemSelection, isSelected }: ScreenListProps) => {

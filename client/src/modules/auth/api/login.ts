@@ -2,13 +2,13 @@ import axios from '@config/axios'
 import { User } from '@modules/user/types'
 
 export type LoginRequestData = {
-	email: string
-	password: string
+    email: string
+    password: string
 }
 
 export type LoginRequestResponse = {
-	user: User
-	token: string
+    user: User
+    token: string
 }
 
 export const loginRequest = async (data: LoginRequestData) => {

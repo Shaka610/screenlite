@@ -2,7 +2,7 @@ import axios from '@config/axios'
 import { RestorePlaylistsRequestData } from '../../types'
 
 type RestorePlaylistsRequestResponse = {
-	playlistIds: string[]
+    playlistIds: string[]
 }
 
 export const restorePlaylistsRequest = async (data: RestorePlaylistsRequestData) => {

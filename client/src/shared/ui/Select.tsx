@@ -3,8 +3,8 @@ import * as SelectPrimitive from '@radix-ui/react-select'
 import { TbCheck, TbChevronDown, TbChevronUp } from 'react-icons/tb'
 
 interface SelectItemProps extends React.ComponentPropsWithoutRef<typeof SelectPrimitive.Item> {
-	children: React.ReactNode
-	className?: string
+    children: React.ReactNode
+    className?: string
 }
 
 const SelectItem = React.forwardRef<HTMLDivElement, SelectItemProps>(
@@ -28,11 +28,11 @@ const SelectItem = React.forwardRef<HTMLDivElement, SelectItemProps>(
 )
 
 interface SelectProps<T> {
-	options: { value: T, label: string }[]
-	placeholder?: string
-	ariaLabel?: string
-	value?: T
-	onChange?: (value: T) => void
+    options: { value: T, label: string }[]
+    placeholder?: string
+    ariaLabel?: string
+    value?: T
+    onChange?: (value: T) => void
 }
 
 export const Select = <T extends string>({ options, placeholder = 'Select an option…', ariaLabel = 'Select', value, onChange }: SelectProps<T>) => (

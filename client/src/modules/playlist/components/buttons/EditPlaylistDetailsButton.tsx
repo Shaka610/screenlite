@@ -5,7 +5,7 @@ import { cloneElement } from 'react'
 import { useNavigate } from 'react-router'
 
 type Props = {
-	children: ButtonElement
+    children: ButtonElement
 }
 
 export const EditPlaylistDetailsButton = ({ children }: Props) => {

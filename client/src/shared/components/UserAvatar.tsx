@@ -2,9 +2,9 @@ import { StorageService } from '@/utils/StorageService'
 import React from 'react'
 
 type UserAvatarProps = {
-	name: string;
-	profilePhoto: string | null;
-	size?: 'small' | 'medium' | 'large';
+    name: string;
+    profilePhoto: string | null;
+    size?: 'small' | 'medium' | 'large';
 }
 
 const sizeMap = {

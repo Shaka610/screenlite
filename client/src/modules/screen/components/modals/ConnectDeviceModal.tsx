@@ -12,7 +12,7 @@ import { useWorkspace } from '@modules/workspace/hooks/useWorkspace'
 import { handleAxiosFieldErrors } from '@shared/helpers/handleAxiosFieldErrors'
 
 type Props = {
-	onClose: () => void
+    onClose: () => void
 }
 
 export const ConnectDeviceModal = ({ onClose }: Props) => {
@@ -46,8 +46,8 @@ export const ConnectDeviceModal = ({ onClose }: Props) => {
                 if (!oldData) return oldData
 				
                 return {
-				  ...oldData,
-				  device: data,
+                    ...oldData,
+                    device: data,
                 }
             })
             onClose()

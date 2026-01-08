@@ -12,7 +12,7 @@ import { useWorkspace } from '@modules/workspace/hooks/useWorkspace'
 import { handleAxiosFieldErrors } from '@shared/helpers/handleAxiosFieldErrors'
 
 type Props = {
-	onClose: () => void
+    onClose: () => void
 }
 
 export const DisconnectDeviceForm = ({ onClose }: Props) => {

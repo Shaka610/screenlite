@@ -3,7 +3,7 @@ import { Modal } from '@shared/ui/modal/Modal'
 import { ChangePlaylistLayoutModal } from '../modals/ChangePlaylistLayoutModal.js'
 
 type Props = {
-	children: ReactElement
+    children: ReactElement
 }
 
 export const ChangePlaylistLayoutButton = ({ children }: Props) => {

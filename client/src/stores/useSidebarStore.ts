@@ -1,16 +1,16 @@
 import { create } from 'zustand'
 
 export type SidebarState = {
-  visible: boolean
-  mounted: boolean
+    visible: boolean
+    mounted: boolean
 }
 
 export type SidebarStore = {
-  sidebars: Record<string, SidebarState>
-  setSidebar: (key: string, state: Partial<SidebarState>) => void
-  toggleSidebar: (key: string) => void
-  getSidebar: (key: string) => SidebarState
-  resetSidebar: (key: string) => void
+    sidebars: Record<string, SidebarState>
+    setSidebar: (key: string, state: Partial<SidebarState>) => void
+    toggleSidebar: (key: string) => void
+    getSidebar: (key: string) => SidebarState
+    resetSidebar: (key: string) => void
 }
 
 const defaultSidebarState: SidebarState = { visible: true, mounted: true }

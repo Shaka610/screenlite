@@ -2,7 +2,7 @@ import axios from '@config/axios'
 import { DeletePlaylistScheduleRequestData, PlaylistSchedule } from '../../types'
 
 type DeletePlaylistScheduleResponse = {
-	schedules: PlaylistSchedule[]
+    schedules: PlaylistSchedule[]
 }
 
 export const deletePlaylistScheduleRequest = async (data: DeletePlaylistScheduleRequestData) => {

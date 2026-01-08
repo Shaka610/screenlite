@@ -15,7 +15,7 @@ export const PrivateRouteMiddleware = () => {
         const path = location.pathname + location.search
 
         const shouldRedirect =
-			path &&
+            path &&
 			path !== '/' &&
 			path !== '/?' &&
 			path !== '?'

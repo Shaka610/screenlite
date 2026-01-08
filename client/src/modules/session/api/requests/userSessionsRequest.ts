@@ -4,7 +4,7 @@ import { UserSessionStatus } from '@modules/session/sessionRoutes'
 import { UserSession } from '@modules/session/types'
 
 export type UserSessionsRequestResponse = PaginatedResponse<
-	UserSession
+    UserSession
 >
 
 export type UserSessionsRequestFilters = {

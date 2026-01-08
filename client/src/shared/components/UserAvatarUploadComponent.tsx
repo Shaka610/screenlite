@@ -1,12 +1,12 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useRef, useState, startTransition } from 'react'
 import { StorageService } from '@/utils/StorageService'
 import { TbCamera } from 'react-icons/tb'
 
 type UserAvatarProps = {
-	name: string;
-	profilePhoto: string | null;
-	preview?: File | null
-	onChange?: (file: File) => void;
+    name: string;
+    profilePhoto: string | null;
+    preview?: File | null
+    onChange?: (file: File) => void;
 }
 
 const PreviewRenderer = ({ preview }: { preview: File | null }) => {
@@ -21,7 +21,9 @@ const PreviewRenderer = ({ preview }: { preview: File | null }) => {
             }
             reader.readAsDataURL(preview)
         } else {
-            setImageSrc(null)
+            startTransition(() => {
+                setImageSrc(null)
+            })
         }
     }, [preview])
 

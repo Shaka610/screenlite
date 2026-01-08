@@ -9,7 +9,7 @@ import { ButtonElement } from '@/types'
 import { useConfirmationDialogStore } from '@stores/useConfirmationDialogStore'
 
 type Props = {
-	children: ButtonElement
+    children: ButtonElement
 }
 
 export const DeletePlaylistButton = ({ children }: Props) => {

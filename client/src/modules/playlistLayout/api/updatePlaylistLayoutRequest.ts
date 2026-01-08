@@ -3,7 +3,7 @@ import { PlaylistLayout } from '@modules/workspace/modules/playlistLayout/types.
 import { PlaylistLayoutEditorLayoutSection } from '@modules/playlistLayoutEditor/types'
 
 type UpdatePlaylistLayoutRequestResponse = {
-	playlistLayout: PlaylistLayout
+    playlistLayout: PlaylistLayout
 }
 
 export type UpdatePlaylistLayoutRequestData = {

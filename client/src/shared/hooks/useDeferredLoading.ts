@@ -28,16 +28,16 @@ import { useState, useEffect, useRef } from 'react'
  */
 
 type DeferredLoadingOptions = {
-  /**
+    /**
    * The delay in milliseconds before the spinner is displayed.
    * @default 500
    */
-  delay?: number;
-  /**
+    delay?: number;
+    /**
    * The minimum duration in milliseconds the spinner is displayed.
    * @default 200
    */
-  minDuration?: number;
+    minDuration?: number;
 }
 
 export const defaultOptions = {

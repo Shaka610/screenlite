@@ -16,9 +16,9 @@ export const SettingsCard = ({
     description,
     children,
 }: {
-	title: string
-	description?: string
-	children: ReactNode
+    title: string
+    description?: string
+    children: ReactNode
 }) => {
     return (
         <div className='border border-neutral-200 rounded-xl overflow-hidden'>

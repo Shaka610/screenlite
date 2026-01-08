@@ -3,7 +3,7 @@ import { Folder, ParentFolderTreeResult } from '@modules/file/types'
 
 export type WorkspaceFolderRequestData = {
     folderId: string
-	workspaceId: string
+    workspaceId: string
 }
 
 export type WorkspaceFolderRequestResponse = {

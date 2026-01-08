@@ -2,7 +2,7 @@ import { Playlist } from '@modules/playlist/types'
 import axios from '@config/axios'
 
 type ScreenPlaylistsRequestResponse = {
-	playlists: Playlist[]
+    playlists: Playlist[]
 }
 
 export const screenPlaylistsRequest = async (id: string) => {

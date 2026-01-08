@@ -28,12 +28,12 @@ type ButtonProps = {
 } & React.ButtonHTMLAttributes<HTMLButtonElement>
 
 export type CustomButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
-	status?: 'success' | 'pending' | 'idle'
-	statusText?: {
-		success?: string
-		pending?: string
-		idle?: string
-	}
+    status?: 'success' | 'pending' | 'idle'
+    statusText?: {
+        success?: string
+        pending?: string
+        idle?: string
+    }
 }
 
 const baseStyles = 'flex items-center justify-center gap-2 rounded-sm transition-colors focus:outline-hidden cursor-pointer disabled:cursor-default font-medium'

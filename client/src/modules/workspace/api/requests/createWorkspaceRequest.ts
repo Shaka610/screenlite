@@ -2,12 +2,12 @@ import axios from '@config/axios'
 import { Workspace } from '@modules/workspace/types'
 
 export type CreateWorkspaceRequestData = {
-	name: string
-	slug: string
+    name: string
+    slug: string
 }
 
 type CreateWorkspaceRequestResponse = {
-	workspace: Workspace
+    workspace: Workspace
 }
 
 export const createWorkspaceRequest = async (data: CreateWorkspaceRequestData) => {

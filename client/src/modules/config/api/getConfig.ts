@@ -2,7 +2,7 @@ import axios from '@/config/axios'
 import { ScreenliteConfig } from '../types'
 
 type GetConfigResponse = {
-	config: ScreenliteConfig
+    config: ScreenliteConfig
 }
 
 export const getConfigRequest = async () => {

@@ -3,7 +3,7 @@ import { CreatePlaylistModal } from '../modals/CreatePlaylistModal'
 import { Modal } from '@shared/ui/modal/Modal'
 
 type Props = {
-	children: ReactElement
+    children: ReactElement
 }
 
 export const CreatePlaylistButton = ({ children }: Props) => {

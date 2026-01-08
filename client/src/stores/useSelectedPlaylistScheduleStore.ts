@@ -3,8 +3,8 @@ import { create } from 'zustand'
 import { devtools } from 'zustand/middleware'
 
 interface State {
-	schedule: PlaylistSchedule | null
-	setSchedule: (schedule: PlaylistSchedule | null) => void
+    schedule: PlaylistSchedule | null
+    setSchedule: (schedule: PlaylistSchedule | null) => void
 }
 
 export const useSelectedPlaylistScheduleStore = create<State>()(

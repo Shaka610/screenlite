@@ -7,7 +7,7 @@ export type CopyPlaylistRequestData = {
 }
 
 type CopyPlaylistRequestResponse = {
-	playlist: GetPlaylistQueryData
+    playlist: GetPlaylistQueryData
 }
 
 export const copyPlaylistRequest = async (data: CopyPlaylistRequestData) => {

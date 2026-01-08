@@ -2,13 +2,13 @@ import axios from '@config/axios'
 import { User } from '@modules/user/types'
 
 export type ChangePasswordData = {
-	userId: string
-	currentPassword: string
-	newPassword: string
+    userId: string
+    currentPassword: string
+    newPassword: string
 }
 
 type ChangePasswordResponse = {
-	user: User
+    user: User
 }
 
 export const changePasswordRequest = async (data: ChangePasswordData) => {

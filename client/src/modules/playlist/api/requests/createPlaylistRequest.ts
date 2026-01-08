@@ -2,7 +2,7 @@ import axios from '@config/axios'
 import { CreatePlaylistRequestData, GetPlaylistQueryData } from '../../types'
 
 type CreatePlaylistRequestResponse = {
-	playlist: GetPlaylistQueryData
+    playlist: GetPlaylistQueryData
 }
 
 export const createPlaylistRequest = async (data: CreatePlaylistRequestData) => {

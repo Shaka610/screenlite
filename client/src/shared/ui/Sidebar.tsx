@@ -22,11 +22,11 @@ export const SidebarItemsGroup = ({ children }: { children: ReactNode }) => {
 }
 
 type SidebarItemProps = {
-	text?: string
-	icon?: IconType
-	counter?: number
-	as?: ReactNode
-	to?: string
+    text?: string
+    icon?: IconType
+    counter?: number
+    as?: ReactNode
+    to?: string
 }
 
 const renderIcon = (IconComponent?: IconType, className?: string) => {

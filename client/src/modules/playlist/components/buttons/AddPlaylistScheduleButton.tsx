@@ -3,7 +3,7 @@ import { AddPlaylistScheduleModal } from '../modals/AddPlaylistScheduleModal'
 import { Modal } from '@shared/ui/modal/Modal'
 
 type Props = {
-	children: ReactElement
+    children: ReactElement
 }
 
 export const AddPlaylistScheduleButton = ({ children }: Props) => {

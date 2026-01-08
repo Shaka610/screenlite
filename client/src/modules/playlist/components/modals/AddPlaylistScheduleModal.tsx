@@ -13,7 +13,7 @@ import { ModalClose } from '@shared/ui/modal/Modal'
 import { Input } from '@shared/ui/input/Input'
 
 type Props = {
-	onClose: () => void
+    onClose: () => void
 }
 
 export const AddPlaylistScheduleModal = ({ onClose }: Props) => {
@@ -54,16 +54,16 @@ export const AddPlaylistScheduleModal = ({ onClose }: Props) => {
             if (isAxiosError(error) && error.response) {
 
                 if (error.response.data && error.response.data.errors) {
-				  const errors = error.response.data.errors
+                    const errors = error.response.data.errors
 		
-				  for (const [field, message] of Object.entries(errors)) {
+                    for (const [field, message] of Object.entries(errors)) {
                         const messageString = String(message)
 
                         setError(field as keyof CreatePlaylistScheduleRequestData, {
                             type: 'custom',
                             message: messageString
                         })
-				  }
+                    }
                 }
             }
         }

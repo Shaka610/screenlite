@@ -3,7 +3,7 @@ import { WorkspaceFile } from '@modules/file/types'
 
 export type WorkspaceFileRequestData = {
     fileId: string
-	workspaceId: string
+    workspaceId: string
 }
 
 export type WorkspaceFileRequestResponse = {

@@ -2,7 +2,7 @@ import axios from '@/config/axios'
 import { ConnectDeviceRequestData, Device } from '../../types'
 
 type ConnectDeviceRequestResponse = {
-	device: Device
+    device: Device
 }
 
 export const connectDeviceRequest = async (data: ConnectDeviceRequestData) => {

@@ -7,7 +7,7 @@ import { currentUserQuery } from '@modules/auth/api/currentUser'
 import { handleAxiosFieldErrors } from '@shared/helpers/handleAxiosFieldErrors'
 
 type Props = {
-	children: ButtonElement
+    children: ButtonElement
 }
 
 export const DisableTwoFaButton = ({ children }: Props) => {

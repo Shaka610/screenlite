@@ -6,7 +6,7 @@ import { cloneElement, ReactElement, useEffect, useState } from 'react'
 import { CustomButtonProps } from '@shared/ui/buttons/Button.js'
 
 type Props = {
-	children: ReactElement<CustomButtonProps>
+    children: ReactElement<CustomButtonProps>
 }
 
 type Status = 'idle' | 'pending' | 'success'

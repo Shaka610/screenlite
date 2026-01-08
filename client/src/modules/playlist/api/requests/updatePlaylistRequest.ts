@@ -2,18 +2,18 @@ import axios from '@config/axios.js'
 import { Playlist, PlaylistSchedule } from '../../types.js'
 
 type UpdatePlaylistRequestResponse = {
-	playlist: Playlist & {
-		schedules: PlaylistSchedule[]
-	}
+    playlist: Playlist & {
+        schedules: PlaylistSchedule[]
+    }
 }
 
 export type UpdatePlaylistRequestData = {
-	workspaceId: string,
-	playlistId: string,
-	name?: string,
-	description?: string,
-	isPublished?: boolean,
-	priority?: number,
+    workspaceId: string,
+    playlistId: string,
+    name?: string,
+    description?: string,
+    isPublished?: boolean,
+    priority?: number,
 }
 
 export const updatePlaylistRequest = async (data: UpdatePlaylistRequestData) => {

@@ -1,9 +1,9 @@
 import { ReactNode } from 'react'
 
 type Props = {
-	label: string
-	name: string
-	children: ReactNode
+    label: string
+    name: string
+    children: ReactNode
 }
 
 export const InputLabelGroup = ({

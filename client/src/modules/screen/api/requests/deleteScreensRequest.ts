@@ -2,7 +2,7 @@ import axios from '@config/axios'
 import { DeleteScreensRequestData } from '../../types'
 
 type DeleteScreensRequestResponse = {
-	screenIds: string[]
+    screenIds: string[]
 }
 
 export const deleteScreensRequest = async (data: DeleteScreensRequestData) => {

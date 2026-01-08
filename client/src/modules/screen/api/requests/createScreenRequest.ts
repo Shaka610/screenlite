@@ -2,7 +2,7 @@ import axios from '@config/axios'
 import { CreateScreenRequestData, Screen } from '../../types'
 
 type CreateScreenRequestResponse = {
-	screen: Screen
+    screen: Screen
 }
 
 export const createScreenRequest = async (data: CreateScreenRequestData) => {

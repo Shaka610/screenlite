@@ -7,8 +7,8 @@ import { useShallow } from 'zustand/react/shallow'
 import { DraggableWrapper } from '@shared/components/DraggableWrapper'
 
 interface PlaylistSectionItemCardProps extends React.HTMLAttributes<HTMLDivElement> {
-	file: WorkspaceFile
-	isDragging?: boolean
+    file: WorkspaceFile
+    isDragging?: boolean
 }
 
 export const FileCard = forwardRef<HTMLDivElement, PlaylistSectionItemCardProps>(({ file, onClick, onDoubleClick, onContextMenu, ...props }, ref) => {

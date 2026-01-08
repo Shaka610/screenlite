@@ -3,15 +3,15 @@ import { FileUploadSession } from '@modules/file/types'
 import { AxiosProgressEvent } from 'axios'
 
 export type UploadFilePartRequestData = {
-	filePart: Blob
-	workspaceId: string
-	sessionId: string
-	onProgress?: (progressEvent: AxiosProgressEvent) => void
-	abortController?: AbortController
+    filePart: Blob
+    workspaceId: string
+    sessionId: string
+    onProgress?: (progressEvent: AxiosProgressEvent) => void
+    abortController?: AbortController
 }
 
 type UploadFilePartRequestResponse = {
-	fileUploadSession: FileUploadSession
+    fileUploadSession: FileUploadSession
 }
 
 export const uploadFilePartRequest = async (data: UploadFilePartRequestData) => {

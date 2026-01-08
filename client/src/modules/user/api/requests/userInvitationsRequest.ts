@@ -2,7 +2,7 @@ import axios from '@/config/axios'
 import { UserInvitation } from '@modules/user/types'
 
 type UserInvitaionsRequestResponse = {
-	invitations: UserInvitation[]
+    invitations: UserInvitation[]
 }
 
 export const userInvitationsRequest = async (userId: string) => {

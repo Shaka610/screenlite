@@ -36,16 +36,16 @@ export const WorkspacePlaylistEditPage = () => {
             if (isAxiosError(error) && error.response) {
 
                 if (error.response.data && error.response.data.errors) {
-				  const errors = error.response.data.errors
+                    const errors = error.response.data.errors
 		
-				  for (const [field, message] of Object.entries(errors)) {
+                    for (const [field, message] of Object.entries(errors)) {
                         const messageString = String(message)
 
                         setError(field as keyof UpdatePlaylistRequestData, {
                             type: 'custom',
                             message: messageString
                         })
-				  }
+                    }
                 }
             }
         }

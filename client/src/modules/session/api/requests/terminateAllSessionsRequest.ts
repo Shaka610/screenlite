@@ -1,8 +1,8 @@
 import axios from '@config/axios'
 
 export type TerminateAllSessionsRequestData = {
-	userId: string
-	excludeSessionId?: string
+    userId: string
+    excludeSessionId?: string
 }
 
 export const terminateAllSessionsRequest = async (data: TerminateAllSessionsRequestData) => {

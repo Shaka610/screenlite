@@ -7,7 +7,7 @@ import { removeMemberRequest, RemoveMemberRequestData } from '@modules/members/a
 import { useWorkspace } from '@modules/workspace/hooks/useWorkspace'
 
 type Props = {
-	children: ButtonElement
+    children: ButtonElement
     member: Member
 }
 

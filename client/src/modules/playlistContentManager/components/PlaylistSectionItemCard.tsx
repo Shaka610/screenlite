@@ -7,8 +7,8 @@ import { SectionItemsFileItemCardBody } from './SectionItems/SectionItemsFileIte
 import React from 'react'
 
 interface PlaylistSectionItemCardProps extends React.HTMLAttributes<HTMLDivElement> {
-  item: PlaylistContentManagerItem
-  isDragging?: boolean
+    item: PlaylistContentManagerItem
+    isDragging?: boolean
 }
 
 export const PlaylistSectionItemCard = forwardRef<HTMLDivElement, PlaylistSectionItemCardProps>(({ item, isDragging, ...props }, ref) => {

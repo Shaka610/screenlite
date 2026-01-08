@@ -2,7 +2,7 @@ import axios from '@config/axios'
 import { CreatePlaylistScheduleRequestData, PlaylistSchedule } from '../../types'
 
 type CreatePlaylistScheduleResponse = {
-	schedules: PlaylistSchedule[]
+    schedules: PlaylistSchedule[]
 }
 
 export const createPlaylistScheduleRequest = async (data: CreatePlaylistScheduleRequestData) => {

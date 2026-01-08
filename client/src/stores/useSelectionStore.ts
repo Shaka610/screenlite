@@ -1,29 +1,29 @@
 import { create } from 'zustand'
 
 interface WithId {
-	id: string
+    id: string
 }
 
 interface SelectionStore {
-	selectedItems: Record<string, { item: WithId, entity: 'file' | 'folder' }>
-	isDragging: boolean
-	lastSelectedIndex: number | null
-	selectItem: (data: { item: WithId, entity: 'file' | 'folder' }) => void
+    selectedItems: Record<string, { item: WithId, entity: 'file' | 'folder' }>
+    isDragging: boolean
+    lastSelectedIndex: number | null
+    selectItem: (data: { item: WithId, entity: 'file' | 'folder' }) => void
     setSelectedItems: (items: Record<string, { item: WithId, entity: 'file' | 'folder' }>) => void
-	unselectItem: (id: string) => void
-	unselectAllItems: () => void
-	clearSelection: () => void
-	getSelectedItems: () => { item: WithId, entity: 'file' | 'folder' }[]
-	getEntity: () => 'file' | 'folder' | null
-	isSelected: (id: string) => boolean
-	setDragging: (isDragging: boolean) => void
-	handleItemClick: <T extends WithId>(
-		item: T, 
-		index: number, 
-		event: React.MouseEvent, 
-		items: T[], 
-		entity: 'file' | 'folder'
-	) => void
+    unselectItem: (id: string) => void
+    unselectAllItems: () => void
+    clearSelection: () => void
+    getSelectedItems: () => { item: WithId, entity: 'file' | 'folder' }[]
+    getEntity: () => 'file' | 'folder' | null
+    isSelected: (id: string) => boolean
+    setDragging: (isDragging: boolean) => void
+    handleItemClick: <T extends WithId>(
+        item: T, 
+        index: number, 
+        event: React.MouseEvent, 
+        items: T[], 
+        entity: 'file' | 'folder'
+    ) => void
 }
 
 export const useSelectionStore = create<SelectionStore>((set, get) => ({

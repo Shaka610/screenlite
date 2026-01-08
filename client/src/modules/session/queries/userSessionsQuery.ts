@@ -4,8 +4,8 @@ export const userSessionsQuery = ({
     userId,
     filters
 }: {
-	userId: string
-	filters: UserSessionsRequestFilters
+    userId: string
+    filters: UserSessionsRequestFilters
 }) => ({
     queryKey: ['userSessions', { userId, filters }],
     queryFn: () => userSessionsRequest(userId, filters),

@@ -2,7 +2,7 @@ import axios from '@config/axios'
 import { User } from '@modules/user/types'
 
 type DisableTwoFaResponse = {
-	user: User
+    user: User
 }
 
 export const disableTwoFaRequest = async () => {

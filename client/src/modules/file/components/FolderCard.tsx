@@ -8,10 +8,10 @@ import { DraggableWrapper } from '@shared/components/DraggableWrapper'
 import { DroppableWrapper } from '@shared/components/DroppableWrapper'
 
 interface PlaylistSectionItemCardProps extends React.HTMLAttributes<HTMLDivElement> {
-	folder: FolderWithChildrenCount
-	isOver?: boolean
-	onContextMenu?: (e: React.MouseEvent) => void
-	onDoubleClick?: (e: React.MouseEvent) => void
+    folder: FolderWithChildrenCount
+    isOver?: boolean
+    onContextMenu?: (e: React.MouseEvent) => void
+    onDoubleClick?: (e: React.MouseEvent) => void
 }
 
 export const FolderCard = forwardRef<HTMLDivElement, PlaylistSectionItemCardProps>(({ folder, onClick, isOver, onContextMenu, onDoubleClick, ...props }, ref) => {

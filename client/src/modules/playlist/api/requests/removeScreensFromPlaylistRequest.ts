@@ -2,7 +2,7 @@ import axios from '@config/axios'
 import { RemoveScreensFromPlaylistRequestData } from '../../types'
 
 type RemoveScreensFromPlaylistResponse = {
-	screens: Screen
+    screens: Screen
 }
 
 export const removeScreensFromPlaylistRequest = async (data: RemoveScreensFromPlaylistRequestData) => {

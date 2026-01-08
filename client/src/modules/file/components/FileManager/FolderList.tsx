@@ -9,7 +9,7 @@ import { FolderWithChildrenCount } from '../../types'
 import { useContextMenuStore } from '@stores/useContextMenuStore'
 
 type FolderListProps = {
-	search?: string
+    search?: string
     parentId?: string
     onFolderDoubleClick?: (folder: FolderWithChildrenCount) => void
 }

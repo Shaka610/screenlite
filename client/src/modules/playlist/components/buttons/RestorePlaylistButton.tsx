@@ -7,7 +7,7 @@ import { restorePlaylistsRequest } from '../../api/requests/recoverPlaylistsRequ
 import { playlistQuery } from '@modules/playlist/api/queries/playlistQuery'
 
 type Props = {
-	children: ButtonElement
+    children: ButtonElement
 }
 
 export const RestorePlaylistButton = ({ children }: Props) => {

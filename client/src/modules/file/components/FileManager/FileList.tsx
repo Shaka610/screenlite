@@ -9,7 +9,7 @@ import { WorkspaceFile } from '../../types'
 import { useContextMenuStore } from '@stores/useContextMenuStore'
 
 interface FileListProps {
-	search: string
+    search: string
     folderId?: string
     onFileDoubleClick?: (file: WorkspaceFile) => void
 }

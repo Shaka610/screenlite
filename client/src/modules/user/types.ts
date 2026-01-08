@@ -1,7 +1,7 @@
 import { Workspace } from '@modules/workspace/types'
 
 export type User = {
-	name: string
+    name: string
     id: string
     email: string
     emailVerifiedAt: string | null
@@ -12,7 +12,7 @@ export type User = {
 }
 
 export type UserInvitation = {
-	id: string
+    id: string
     email: string
     status: string
     createdAt: string

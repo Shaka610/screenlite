@@ -2,9 +2,9 @@ import { NavLink } from 'react-router'
 import { twMerge } from 'tailwind-merge'
 
 interface TabProps {
-	name: string
-	to: string
-	counter?: number
+    name: string
+    to: string
+    counter?: number
 }
 
 const navLinkClasses = ({ isActive }: { isActive: boolean }) => 
@@ -32,7 +32,7 @@ const Tab = ({ name, to, counter }: TabProps) => {
 }
 
 interface PageTabsProps {
-	tabs: TabProps[]
+    tabs: TabProps[]
 }
 
 export const PageTabs = ({ tabs }: PageTabsProps) => {

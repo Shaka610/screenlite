@@ -14,10 +14,10 @@ const MenuItem = ({
     icon,
     disabled = false
 }: {
-	children: React.ReactNode
-	onClick?: () => void,
-	icon?: IconType,
-	disabled?: boolean
+    children: React.ReactNode
+    onClick?: () => void,
+    icon?: IconType,
+    disabled?: boolean
 }) => {
     return (
         <DropdownMenu.Item

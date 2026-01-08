@@ -2,7 +2,7 @@ import axios from '@config/axios'
 import { AddScreensToPlaylistRequestData } from '../../types'
 
 type AddScreensToPlaylistResponse = {
-	screens: Screen[]
+    screens: Screen[]
 }
 
 export const addScreensToPlaylistRequest = async (data: AddScreensToPlaylistRequestData) => {

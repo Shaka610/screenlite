@@ -1,7 +1,7 @@
 import axios from '@config/axios'
 
 export type TerminateSessionRequestData = {
-	sessionId: string
+    sessionId: string
 }
 
 export const terminateSessionRequest = async (data: TerminateSessionRequestData) => {

@@ -3,15 +3,15 @@ import { useFloating, offset, flip, shift, useInteractions, useClick, useDismiss
 import { TbChevronDown } from 'react-icons/tb'
 
 type Option = {
-	name: string
-	onClick: () => void
-	counter?: number
-	isActive: boolean
+    name: string
+    onClick: () => void
+    counter?: number
+    isActive: boolean
 }
 
 type FilterDropdownProps = {
-	options: Option[]
-	menuButtonClass?: string
+    options: Option[]
+    menuButtonClass?: string
 }
 
 export const FilterDropdown = ({ options, menuButtonClass }: FilterDropdownProps) => {

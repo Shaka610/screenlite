@@ -2,14 +2,14 @@ import axios from '@config/axios'
 import { User } from '@modules/user/types'
 
 export type UpdateUserData = {
-	userId: string
-	name?: string
-	profilePhoto: File | null
-	removeProfilePhoto: boolean
+    userId: string
+    name?: string
+    profilePhoto: File | null
+    removeProfilePhoto: boolean
 }
 
 type UpdateUserResponse = {
-	user: User
+    user: User
 }
 
 export const updateUserRequest = async (data: UpdateUserData) => {

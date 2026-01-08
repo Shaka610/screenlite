@@ -10,7 +10,7 @@ import { useConfirmationDialogStore } from '@stores/useConfirmationDialogStore'
 import { useWorkspace } from '@modules/workspace/hooks/useWorkspace'
 
 type Props = {
-	children: ReactElement<ButtonHTMLAttributes<HTMLButtonElement>, 'button'>
+    children: ReactElement<ButtonHTMLAttributes<HTMLButtonElement>, 'button'>
 }
 
 export const DeleteScreenButton = ({ children }: Props) => {
